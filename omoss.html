@@ -6,6 +6,119 @@
     <title>Om oss - Scandix Entreprenad AB</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .about-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: #fff;
+        }
+
+        .about-header h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .about-image-section {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .about-image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .guarantee-section {
+            background: #e8e8e8;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .guarantee-section h2 {
+            font-size: 2em;
+            color: #333;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .second-image-section {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .second-image-section img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+
+        .wood-panel-section {
+            background-image: url('images/wood-panel-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: #8b8b8b;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .wood-panel-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(139, 139, 139, 0.3);
+            z-index: 1;
+        }
+
+        .wood-panel-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .wood-panel-section h2 {
+            font-size: 2.2em;
+            color: #000;
+            margin-bottom: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .quote-btn {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .quote-btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
     <!-- Toppbanner -->
@@ -50,80 +163,31 @@
         </div>
     </header>
 
-    <!-- Hero-sektion -->
-    <section class="hero">
-        <img src="images/hero/hero-about.jpg" alt="Om Scandix Entreprenad AB - Byggföretag i Stockholm">
+    <!-- About Header -->
+    <section class="about-header">
+        <h1>Om oss</h1>
     </section>
 
-    <!-- Vår Historia Section -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h1>Vår historia</h1>
-                    <p>Scandix Entreprenad AB grundades med en vision om att leverera högkvalitativa byggentreprenörstjänster i Stockholmsområdet. Som ett familjeägt företag har vi byggt vår verksamhet på starka värderingar om ärlighet, professionalitet och genuint engagemang för varje projekt vi åtar oss.</p>
-                    <p>Genom åren har vi vuxit från ett litet lokalt företag till en etablerad aktör inom byggbranschen. Vår framgång grundar sig på vårt orubbliga fokus på kvalitet, kundens tillfredsställelse och vår förmåga att anpassa oss till branschens ständiga utveckling.</p>
-                    <p>Idag är vi stolta över att kunna erbjuda en bred palett av tjänster, från badrumsrenoveringar och takläggning till mer omfattande byggprojekt. Vårt team består av erfarna hantverkare och projektledare som delar samma passion för kvalitet och yrkesskicklighet.</p>
-                    <p>Vi tror på långsiktiga relationer med våra kunder och många av dem återkommer till oss för nya projekt, vilket är det bästa betyget vi kan få. Vårt fokus ligger på att alltid leverera mer än förväntat och att varje projekt, oavsett storlek, får den uppmärksamhet det förtjänar.</p>
-                </div>
-                <div class="about-image">
-                    <img src="images/about/about-history.jpg" alt="Scandix Entreprenad historia - Byggföretag Stockholm">
-                </div>
-            </div>
-        </div>
+    <!-- First Image Section -->
+    <section class="about-image-section">
+        <img src="images/about-main.jpg" alt="Om oss bild">
     </section>
 
-    <!-- Värderingar Section -->
-    <section class="values-section">
-        <div class="container">
-            <h2>Våra värderingar</h2>
-            <div class="values-grid">
-                <div class="value-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Kvalitet</h3>
-                    <p>Vi kompromissar aldrig med kvaliteten. Varje projekt utförs med högsta precision och omtanke.</p>
-                </div>
-                <div class="value-item">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Pålitlighet</h3>
-                    <p>Vi håller våra löften och levererar alltid i tid. Du kan lita på oss från start till mål.</p>
-                </div>
-                <div class="value-item">
-                    <i class="fas fa-users"></i>
-                    <h3>Kundnöjdhet</h3>
-                    <p>Din tillfredsställelse är vår främsta prioritet. Vi lyssnar, förstår och levererar efter dina behov.</p>
-                </div>
-                <div class="value-item">
-                    <i class="fas fa-lightbulb"></i>
-                    <h3>Innovation</h3>
-                    <p>Vi håller oss uppdaterade med de senaste teknikerna och metoderna inom byggbranschen.</p>
-                </div>
-            </div>
-        </div>
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+        <h2>Garanterar rimliga kostnader och högkvalitativa material</h2>
     </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <h2>Möt vårt team</h2>
-            <p class="team-intro">Bakom Scandix Entreprenad AB finns ett dedikerat team av erfarna proffs som brinner för byggbranschen. Tillsammans har vi kompetensen och erfarenheten att hantera projekt av alla storlekar.</p>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/about/team-anders-svensson.jpg" alt="Anders Svensson - VD Scandix Entreprenad AB">
-                    <h4>Anders Svensson</h4>
-                    <p>VD & Grundare</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/about/team-maria-lindqvist.jpg" alt="Maria Lindqvist - Projektledare Scandix Entreprenad AB">
-                    <h4>Maria Lindqvist</h4>
-                    <p>Projektledare</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/about/team-johan-karlsson.jpg" alt="Johan Karlsson - Byggchef Scandix Entreprenad AB">
-                    <h4>Johan Karlsson</h4>
-                    <p>Byggchef</p>
-                </div>
-            </div>
+    <!-- Second Image Section -->
+    <section class="second-image-section">
+        <img src="images/about-second.jpg" alt="Scandix Entreprenad arbete">
+    </section>
+
+    <!-- Wood Panel CTA Section -->
+    <section class="wood-panel-section">
+        <div class="wood-panel-content">
+            <h2>Vårt team är redo att hjälpa dig att uppnå dina drömmar</h2>
+            <a href="kontakt.html" class="quote-btn">Få en offert</a>
         </div>
     </section>
 
