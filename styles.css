@@ -30,8 +30,11 @@ body {
 
 .contact-info {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .contact-item {
@@ -42,6 +45,7 @@ body {
 .contact-item i {
     margin-right: 8px;
     color: #888;
+    font-size: 18px;
 }
 
 /* Header */
@@ -80,7 +84,7 @@ header {
 
 .menu li a:hover,
 .menu li a.active {
-    color: #c62828;
+    color: #0066cc;
 }
 
 .mobile-menu-toggle {
@@ -117,19 +121,19 @@ header {
 
 .hero-overlay {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .btn-hero {
-    background-color: #c62828;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 18px 40px;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     letter-spacing: 1px;
     display: inline-block;
     transition: all 0.3s;
@@ -137,7 +141,7 @@ header {
 }
 
 .btn-hero:hover {
-    background-color: #a02020;
+    background-color: #f0f0f0;
     transform: scale(1.05);
 }
 
@@ -146,6 +150,11 @@ header {
     background-color: #3a3a3a;
     color: #ffffff;
     padding: 80px 0;
+}
+
+.info-contact-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .info-contact-grid {
@@ -186,23 +195,22 @@ header {
 }
 
 .btn-primary {
-    background-color: #c62828;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .btn-primary:hover {
-    background-color: #a02020;
+    background-color: #f0f0f0;
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     border: 2px solid #ffffff;
 }
 
 .btn-secondary:hover {
-    background-color: #ffffff;
-    color: #3a3a3a;
+    background-color: #f0f0f0;
 }
 
 .contact-form {
@@ -239,12 +247,12 @@ header {
 
 .btn-submit {
     width: 100%;
-    background-color: #c62828;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .btn-submit:hover {
-    background-color: #a02020;
+    background-color: #f0f0f0;
 }
 
 /* Badrumsrenovering - Trebilds-sektion */
@@ -897,7 +905,11 @@ header {
     margin: 0;
 }
 
-.partners-fullwidth img {
+.partners-wrapper {
+    padding: 0 60px;
+}
+
+.partners-wrapper img {
     width: 100%;
     height: auto;
     display: block;
@@ -905,7 +917,7 @@ header {
 
 /* Footer */
 footer {
-    background-color: #ebebeb;
+    background-color: #ffffff;
     padding: 50px 0 20px;
 }
 
@@ -1021,6 +1033,10 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    .partners-wrapper {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1095,5 +1111,9 @@ footer {
 
     .logo img {
         height: 60px;
+    }
+
+    .partners-wrapper {
+        padding: 0 10px;
     }
 }
