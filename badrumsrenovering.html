@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Badrumsrenovering - Scandix Entreprenad AB</title>
+    <title>Badrumsrenovering - Scandix Entrepren
+
+ad AB</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -24,6 +26,18 @@
         </div>
     </div>
 
+    <!-- Mobile Top Banner med Hamburger -->
+    <div class="mobile-top-banner">
+        <div class="mobile-top-content">
+            <div class="mobile-logo-small">
+                <img src="images/logo/logo-scandix.png" alt="Scandix Logo">
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
@@ -38,6 +52,7 @@
                         <li><a href="index.html">Hem</a></li>
                         <li><a href="tjanster.html">Tjänster</a></li>
                         <li><a href="badrumsrenovering.html" class="active">Badrumsrenovering</a></li>
+                        <li><a href="gjutjarnsbrunnar.html">Gjutjärnsbrunnar</a></li>
                         <li><a href="omoss.html">Om oss</a></li>
                         <li><a href="referenser.html">Referenser</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
@@ -170,8 +185,10 @@
     </footer>
 
     <script>
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.menu').classList.toggle('active');
+        document.querySelectorAll('.mobile-menu-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                document.querySelector('.menu').classList.toggle('active');
+            });
         });
     </script>
 </body>
