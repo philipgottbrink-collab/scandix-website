@@ -58,8 +58,9 @@ body {
 }
 
 .mobile-logo-banner img {
-    height: 150px;
-    width: auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 150px;
 }
 
 /* Header */
@@ -458,10 +459,8 @@ header {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     letter-spacing: 2px;
-    border-bottom: 2px solid #333;
     display: inline-block;
     margin: 0 auto;
-    padding-bottom: 10px;
     width: 100%;
 }
 
@@ -1156,12 +1155,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .process-grid,
-    .process-grid.reverse {
-        grid-template-columns: 1fr;
-        direction: ltr;
-    }
-
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -1203,6 +1196,21 @@ footer {
     .process-title {
         font-size: 1.8em;
     }
+
+    /* Process grid på mobil - text först, sedan bild */
+    .process-grid,
+    .process-grid.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+    
+    .process-grid .process-text {
+        order: 1;
+    }
+    
+    .process-grid .process-image {
+        order: 2;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1216,9 +1224,9 @@ footer {
         display: block;
     }
 
-    /* Mindre logga i header på mobil */
+    /* Ännu mindre logga i header på mobil */
     .logo img {
-        height: 60px;
+        height: 45px;
     }
 
     .mobile-menu-toggle {
@@ -1289,7 +1297,7 @@ footer {
 
 @media (max-width: 480px) {
     .logo img {
-        height: 50px;
+        height: 40px;
     }
 
     .btn {
