@@ -9,7 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .container {
@@ -39,14 +39,33 @@ body {
 }
 
 .contact-item {
-    color: #000;
-    font-weight: 300;
+    color: #666;
+    font-weight: 200;
 }
 
 .contact-item i {
     margin-right: 8px;
-    color: #000;
+    color: #666;
     font-size: 18px;
+}
+
+/* Mobile Top Banner - Dold på desktop */
+.mobile-top-banner {
+    display: none;
+    background-color: #e8e8e8;
+    padding: 15px 0;
+}
+
+.mobile-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.mobile-logo-small img {
+    height: 40px;
+    width: auto;
 }
 
 /* Mobile Logo Banner - Dold på desktop */
@@ -92,7 +111,7 @@ header {
 .menu li a {
     text-decoration: none;
     color: #666;
-    font-weight: 300;
+    font-weight: 200;
     transition: color 0.3s;
 }
 
@@ -147,7 +166,7 @@ header {
     padding: 18px 40px;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 1px;
     display: inline-block;
     transition: all 0.3s;
@@ -180,7 +199,7 @@ header {
 .info-text h2 {
     font-size: 28px;
     margin-bottom: 25px;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 1px;
 }
 
@@ -188,7 +207,7 @@ header {
     margin-bottom: 20px;
     line-height: 1.8;
     color: #e0e0e0;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .button-group {
@@ -202,7 +221,7 @@ header {
     border: none;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 1px;
     transition: all 0.3s;
     text-decoration: none;
@@ -238,7 +257,7 @@ header {
 .contact-form h3 {
     margin-bottom: 25px;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .contact-form h3 i {
@@ -255,7 +274,7 @@ header {
     background-color: #5a5a5a;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .contact-form input::placeholder,
@@ -285,7 +304,7 @@ header {
     margin-bottom: 10px;
     color: #333;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -327,7 +346,7 @@ header {
     margin-bottom: 25px;
     color: #333;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -338,7 +357,7 @@ header {
     color: #666;
     line-height: 1.8;
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .services-grid {
@@ -364,14 +383,14 @@ header {
     padding: 25px 25px 15px;
     font-size: 24px;
     color: #333;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .service-item p {
     padding: 0 25px 25px;
     color: #666;
     line-height: 1.8;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 /* Tjänster Page Content */
@@ -389,7 +408,7 @@ header {
     color: #333;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -400,7 +419,7 @@ header {
     color: #666;
     line-height: 1.8;
     margin-bottom: 15px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .service-images {
@@ -429,7 +448,7 @@ header {
     color: #333;
     margin-bottom: 25px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -442,7 +461,7 @@ header {
     max-width: 900px;
     margin: 0 auto 15px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 /* Work Process - Schackmönster */
@@ -457,7 +476,7 @@ header {
     padding: 60px 0 40px;
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     display: inline-block;
     margin: 0 auto;
@@ -502,14 +521,14 @@ header {
     font-size: 28px;
     color: #333;
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .process-text p {
     color: #555;
     line-height: 1.8;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 /* CTA Section */
@@ -523,14 +542,14 @@ header {
 .cta-section h2 {
     font-size: 36px;
     margin-bottom: 15px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .cta-section p {
     font-size: 18px;
     margin-bottom: 30px;
     color: #e0e0e0;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 /* Om Oss Page */
@@ -551,7 +570,7 @@ header {
     color: #333;
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -563,7 +582,7 @@ header {
     line-height: 1.8;
     margin-bottom: 20px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .about-image img {
@@ -585,7 +604,7 @@ header {
     color: #333;
     margin-bottom: 60px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -616,13 +635,13 @@ header {
     font-size: 22px;
     color: #333;
     margin-bottom: 15px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .value-item p {
     color: #666;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 /* Team Section */
@@ -637,7 +656,7 @@ header {
     color: #333;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -650,7 +669,7 @@ header {
     margin: 0 auto 50px;
     color: #666;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .team-grid {
@@ -674,13 +693,13 @@ header {
     font-size: 22px;
     color: #333;
     margin-bottom: 8px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .team-member p {
     color: #666;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 /* Kundomdömen */
@@ -713,7 +732,7 @@ header {
     margin-bottom: 10px;
     letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     border-bottom: 2px solid #fff;
     display: inline-block;
     padding-bottom: 10px;
@@ -738,11 +757,11 @@ header {
     font-style: italic;
     line-height: 1.8;
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .testimonial-author {
-    font-weight: 300;
+    font-weight: 200;
     text-align: right;
     font-size: 14px;
 }
@@ -770,7 +789,7 @@ header {
     color: #333;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -783,7 +802,7 @@ header {
     margin: 0 auto 60px;
     color: #666;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .testimonials-list {
@@ -809,7 +828,7 @@ header {
     line-height: 1.8;
     margin-bottom: 20px;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .testimonial-card .testimonial-author {
@@ -822,7 +841,7 @@ header {
     color: #333;
     font-size: 18px;
     margin-bottom: 5px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .testimonial-card .testimonial-author span {
@@ -839,7 +858,7 @@ header {
     font-size: 28px;
     color: #333;
     margin-bottom: 25px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 /* Kontakt Page */
@@ -858,7 +877,7 @@ header {
     color: #000;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -870,7 +889,7 @@ header {
     font-size: 18px;
     max-width: 700px;
     margin: 0 auto;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .contact-page-grid {
@@ -885,7 +904,7 @@ header {
     color: #000;
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 2px;
     border-bottom: 2px solid #333;
     display: inline-block;
@@ -906,7 +925,7 @@ header {
     display: block;
     margin-bottom: 8px;
     color: #000;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .form-group input,
@@ -917,7 +936,7 @@ header {
     border-radius: 4px;
     font-size: 14px;
     font-family: inherit;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .form-group input:focus,
@@ -954,13 +973,13 @@ header {
     font-size: 18px;
     color: #000;
     margin-bottom: 8px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .contact-detail-item .detail p {
     color: #000;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .contact-detail-item .detail a {
@@ -976,7 +995,7 @@ header {
     font-size: 18px;
     color: #000;
     margin-bottom: 15px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .social-icons {
@@ -1020,14 +1039,14 @@ header {
     font-size: 36px;
     color: #333;
     margin-bottom: 15px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .contact-cta p {
     font-size: 18px;
     color: #666;
     margin-bottom: 30px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .cta-buttons {
@@ -1082,7 +1101,7 @@ footer {
     margin-bottom: 12px;
     color: #666;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .footer-info i {
@@ -1102,7 +1121,7 @@ footer {
     text-decoration: none;
     color: #666;
     transition: color 0.3s;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .footer-menu a:hover {
@@ -1119,6 +1138,56 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 968px) {
+    /* Visa mobile top banner, dölj desktop top banner */
+    .top-banner {
+        display: none;
+    }
+    
+    .mobile-top-banner {
+        display: block;
+    }
+    
+    /* Dölj desktop header */
+    header {
+        display: none;
+    }
+    
+    /* Visa mobile logo banner */
+    .mobile-logo-banner {
+        display: block;
+    }
+    
+    /* Större hero-bild på mobil */
+    .hero-with-cta img {
+        min-height: 500px;
+        object-fit: cover;
+    }
+    
+    /* Mobile menu styling */
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 9999;
+    }
+    
+    .menu.active {
+        display: flex;
+    }
+    
+    .menu li a {
+        font-size: 24px;
+        color: #333;
+    }
+
     .info-contact-grid {
         grid-template-columns: 1fr;
     }
@@ -1201,3 +1270,6 @@ footer {
     .process-grid,
     .process-grid.reverse {
         grid-template-columns: 1fr;
+        direction: ltr;
+    }
+}
