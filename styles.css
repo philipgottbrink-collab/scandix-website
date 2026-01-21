@@ -69,6 +69,9 @@ body {
 }
 
 .mobile-menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
     color: #666;
 }
 
@@ -1154,32 +1157,43 @@ footer {
         display: block;
     }
     
+    /* Visa hamburger-menyn */
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
     /* Dölj desktop header */
     header {
         display: none;
     }
     
-    /* Visa mobile logo banner */
+    /* Visa mobile logo banner - MINDRE */
     .mobile-logo-banner {
         display: block;
+        padding: 15px 0;
     }
     
-    /* Större hero-bild på mobil */
+    .mobile-logo-banner img {
+        max-height: 100px;
+    }
+    
+    /* Hero-bild lite mindre på mobil */
     .hero-with-cta img {
-        min-height: 500px;
+        min-height: 400px;
         object-fit: cover;
     }
     
-    /* Hero-knapp längre ner och text på en rad */
+    /* Hero-knapp längre ner, BREDARE och STÖRRE TEXT */
     .hero-overlay {
         top: 75%;
     }
     
     .hero-overlay .btn-primary {
-        padding: 10px 15px;
-        font-size: 10px;
+        padding: 12px 40px;
+        font-size: 13px;
         white-space: nowrap;
         letter-spacing: 0.5px;
+        min-width: 280px;
     }
     
     /* Mobile menu styling - slajdar från höger med mörkgrå bakgrund */
@@ -1209,15 +1223,26 @@ footer {
         color: #ffffff;
     }
     
-    /* Kontaktformulär mobil - större och centrerad ikon, text på en rad */
+    /* Info/Kontakt-sektion - mindre padding ovanför */
+    .info-contact {
+        padding: 40px 0 30px 0;
+    }
+    
+    /* Kontaktformulär mobil - mindre padding nedanför */
+    .contact-form {
+        padding: 40px 40px 30px 40px;
+    }
+    
+    /* Kontaktformulär - större och fetare text, större ikon */
     .contact-form h3 {
-        font-size: 16px;
-        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 400;
+        white-space: normal;
     }
     
     .contact-form h3 i {
-        font-size: 48px;
-        margin-bottom: 20px;
+        font-size: 50px;
+        margin-bottom: 15px;
     }
 
     .info-contact-grid {
