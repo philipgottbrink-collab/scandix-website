@@ -687,7 +687,7 @@ header {
 .testimonials {
     position: relative;
     color: #ffffff;
-    padding: 80px 0;
+    padding: 60px 0;
     text-align: center;
     overflow: hidden;
 }
@@ -705,7 +705,7 @@ header {
 .testimonials-overlay {
     position: relative;
     z-index: 2;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .testimonials h2 {
@@ -1043,7 +1043,7 @@ header {
 }
 
 .partners-wrapper {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 60px;
 }
@@ -1061,7 +1061,7 @@ footer {
 }
 
 .footer-wrapper {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 60px;
 }
@@ -1201,119 +1201,3 @@ footer {
     .process-grid,
     .process-grid.reverse {
         grid-template-columns: 1fr;
-        direction: ltr;
-    }
-    
-    .process-grid .process-text {
-        order: 1;
-    }
-    
-    .process-grid .process-image {
-        order: 2;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Dölj toppbannern på mobil */
-    .top-banner {
-        display: none;
-    }
-
-    /* Visa mobile logo banner */
-    .mobile-logo-banner {
-        display: block;
-    }
-
-    /* Ännu mindre logga i header på mobil */
-    .logo img {
-        height: 45px;
-    }
-
-    .mobile-menu-toggle {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #ffffff;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        padding: 20px;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Centrerad hard hat ikon på mobil */
-    .contact-form h3 {
-        text-align: center;
-    }
-
-    /* Mindre breda knappar på mobil */
-    .btn-primary,
-    .btn-secondary {
-        max-width: 250px;
-        width: 100%;
-    }
-
-    .button-group {
-        align-items: center;
-    }
-
-    /* Bildgalleri 2x2 på mobil */
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    /* Titlar ännu mindre på mobil */
-    .info-text h2 {
-        font-size: 18px;
-    }
-
-    .bathroom-gallery h2,
-    .services-intro h2,
-    .service-detail h2,
-    .bathroom-intro h1,
-    .process-title {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        height: 40px;
-    }
-
-    .btn {
-        padding: 12px 20px;
-        font-size: 12px;
-    }
-
-    .info-text h2 {
-        font-size: 16px;
-    }
-
-    .bathroom-gallery h2,
-    .services-intro h2,
-    .service-detail h2,
-    .bathroom-intro h1,
-    .process-title {
-        font-size: 1.3em;
-    }
-}
