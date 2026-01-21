@@ -404,7 +404,7 @@ header {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
 
@@ -1168,6 +1168,7 @@ footer {
 .footer-info i {
     margin-right: 10px;
     color: #888;
+    font-size: 16px;
 }
 
 .footer-menu ul {
@@ -1346,7 +1347,7 @@ footer {
     }
 
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .gallery-grid {
@@ -1362,10 +1363,18 @@ footer {
         grid-template-columns: 1fr;
         text-align: left;
     }
+    
+    .footer-logo {
+        text-align: center;
+    }
+    
+    .footer-info i {
+        font-size: 20px;
+    }
 
     .footer-menu ul {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 20px;
     }
 
