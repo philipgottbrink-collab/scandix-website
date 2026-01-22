@@ -14,7 +14,7 @@
            <div class="contact-info">
                <span class="contact-item">
                    <i class="far fa-envelope"></i>
-                   Scandixentreprenad@gmail.com
+                   <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="beeddddfd0dad7c6dbd0caccdbceccdbd0dfdafed9d3dfd7d290ddd1d3">[email&#160;protected]</a>
                </span>
                <span class="contact-item">
                    <i class="fas fa-phone"></i>
@@ -102,10 +102,12 @@
                    </div>
                    <div class="contact-form">
                        <h3><i class="fas fa-hard-hat"></i><br>Kontakta oss för en offert</h3>
-                       <form>
-                           <input type="text" placeholder="Namn" required>
-                           <input type="email" placeholder="E-post" required>
-                           <textarea placeholder="Meddelande" rows="5" required></textarea>
+                       <form action="https://api.web3forms.com/submit" method="POST">
+                           <input type="hidden" name="access_key" value="eec20556-19d8-4e0b-9d4c-8404fb962755">
+                           <input type="hidden" name="redirect" value="https://yourwebsite.com/tack.html">
+                           <input type="text" name="name" placeholder="Namn" required>
+                           <input type="email" name="email" placeholder="E-post" required>
+                           <textarea name="message" placeholder="Meddelande" rows="5" required></textarea>
                            <button type="submit" class="btn btn-submit">SKICKA</button>
                        </form>
                    </div>
@@ -231,7 +233,7 @@
                    </div>
                    <div class="footer-info">
                        <p><i class="far fa-map-marker-alt"></i> Glanshammarsgatan 66, 12471 Bandhagen</p>
-                       <p><i class="far fa-envelope"></i> Scandixentreprenad@gmail.com</p>
+                       <p><i class="far fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0f5c6c6e616b66776a617b7d6a7f7d6a616e6b4f68626e6663216c6062">[email&#160;protected]</a></p>
                        <p><i class="far fa-phone-alt"></i> <a href="tel:0762900734">0762900734</a></p>
                        <p><i class="far fa-id-card"></i> Org nr: <a href="#">559558-1447</a></p>
                    </div>
@@ -250,7 +252,7 @@
        </div>
    </footer>
  
-   <script>
+   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
        // Mobile menu toggle
        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
        const mobileMenu = document.getElementById('mobileMenu');
@@ -268,14 +270,4 @@
        });
        
        // Close menu when clicking outside
-       document.addEventListener('click', function(event) {
-           const isClickInsideMenu = mobileMenu.contains(event.target);
-           const isClickOnToggle = mobileMenuToggle.contains(event.target);
-           
-           if (!isClickInsideMenu && !isClickOnToggle && mobileMenu.classList.contains('active')) {
-               mobileMenu.classList.remove('active');
-           }
-       });
-   </script>
-</body>
-</html>
+       document.addEventListener('click', function(event)
