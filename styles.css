@@ -417,13 +417,14 @@ header {
 
 .service-item img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     display: block;
 }
 
 .service-item h3 {
     padding: 25px 25px 15px;
-    font-size: 24px;
+    font-size: 18px;
     color: #333;
     font-weight: 100;
 }
@@ -571,6 +572,38 @@ header {
     line-height: 1.8;
     font-size: 16px;
     font-weight: 100;
+}
+
+/* Process images - för mobile gallery på badrum */
+.process-images {
+    display: none;
+    margin-top: 20px;
+}
+
+.process-images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.process-images-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.process-images-single {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.process-images-single img {
+    width: calc(50% - 7.5px);
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* CTA Section */
@@ -1426,10 +1459,15 @@ footer {
         font-size: 1.8em;
     }
 
-    /* Process grid på mobil - text först, sedan bild */
+    /* Process grid på mobil - text först, sedan bild, MED bildgalleri */
     .process-grid,
     .process-grid.reverse {
         grid-template-columns: 1fr;
         direction: ltr;
+    }
+    
+    /* Visa bildgalleriet på mobil under varje textstycke */
+    .process-images {
+        display: block;
     }
 }
